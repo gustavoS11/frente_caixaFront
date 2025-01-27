@@ -5,11 +5,14 @@ const myHeaders = {
 const submit = document.querySelector("#btn-submit")
 submit.addEventListener("click", (event)=>{
     event.preventDefault()
-    const email = document.querySelector("#btn-email")
-    loginUser(email)
+    const email = document.querySelector("#btn-email").value
+    const dados = {
+        email
+    }
+    loginUser(dados)
 })
-async function loginUser(email) {
-    const dadosJson = JSON.stringify(email)
+async function loginUser(dados) {
+    const dadosJson = JSON.stringify(dados)
     const login = await fetch(`http://localhost:3000/user/login`, {
         method: 'POST',
         body: dadosJson,
@@ -23,6 +26,6 @@ async function loginUser(email) {
             window.location.href = "../menu/menu.html"
         }, 1000)
     } else {
-        //window.location.reload()
+        //toastify
     }
 }
