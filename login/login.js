@@ -28,7 +28,8 @@ async function loginUser(dados) {
 
         if(loginUserJson.id_tipo_usuario == 2){
             setTimeout(() => {
-                window.location.href = "/senha_gerente/senha.html"
+                window.location.href = "../menu/menu.html"
+                //window.location.href = "/senha_gerente/senha.html" SERA FEITO SE SOBRAR TEMPO
             }, 1000);
         }
         else{
@@ -37,6 +38,14 @@ async function loginUser(dados) {
             }, 1000)
         }
     } else {
-        //toastify
+            Toastify({
+                text: `Erro ao carregar cidades (Status: ${login.status})`,
+                duration: 3000,
+                gravity: "top",
+                position: "center",
+                style: {
+                    background: "red",
+                }
+            }).showToast();
     }
 }
