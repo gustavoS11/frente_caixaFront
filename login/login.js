@@ -20,11 +20,22 @@ async function loginUser(dados) {
     })
     if (login.status == 200) {
         const loginUserJson = await login.json()
-        localStorage.setItem("@frentecaixa-userId", loginUserJson.id)
-        localStorage.setItem("@frentecaixa-userEmail", loginUserJson.email)
-        setTimeout(() => {
-            window.location.href = "../menu/menu.html"
-        }, 1000)
+
+        localStorage.clear()
+        localStorage.setItem("@frentecaixa-userId", loginUserJson.id_usuario)
+        localStorage.setItem("@frentecaixa-userEmail", loginUserJson.login)
+        localStorage.setItem("@frentecaixa-userType", loginUserJson.id_tipo_usuario)
+
+        if(loginUserJson.id_tipo_usuario == 2){
+            setTimeout(() => {
+                window.location.href = "/senha_gerente/senha.html"
+            }, 1000);
+        }
+        else{
+            setTimeout(() => {
+                window.location.href = "../menu/menu.html"
+            }, 1000)
+        }
     } else {
         //toastify
     }
