@@ -3,7 +3,6 @@ const submit = document.querySelector("#input-submit")
 const realPassword = 1234
 
 submit.addEventListener("click", (event) =>{
-    console.log(password)
     event.preventDefault()
     if (password = realPassword) {
         setTimeout(() => {

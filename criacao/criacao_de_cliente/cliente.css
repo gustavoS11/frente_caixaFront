@@ -1,0 +1,50 @@
+#div-forms{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-inline: 15px;
+    
+}
+div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 15px;
+}
+input,select{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 1px;
+}
+label{
+    color: wheat;
+    text-align: center;
+    padding: 1px;
+    background-color: red;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+button{
+    margin: 5px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: brown;
+    color: wheat;
+}
+h1{
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#div-half{
+    display: flex;
+    flex-direction: row;
+}
+#submit{
+    padding: 5px;
+    border-radius: 15px;
+    padding-inline: 20px;
+}

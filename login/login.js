@@ -22,7 +22,7 @@ async function loginUser(dados) {
         const loginUserJson = await login.json()
 
         localStorage.clear()
-        localStorage.setItem("@frentecaixa-userId", loginUserJson.id_usuario)
+        localStorage.setItem("@frentecaixa-userID", loginUserJson.id_usuario)
         localStorage.setItem("@frentecaixa-userEmail", loginUserJson.login)
         localStorage.setItem("@frentecaixa-userType", loginUserJson.id_tipo_usuario)
 
@@ -39,7 +39,7 @@ async function loginUser(dados) {
         }
     } else {
             Toastify({
-                text: `Erro ao carregar cidades (Status: ${login.status})`,
+                text: `Erro ao fazer login (Status: ${login.status})`,
                 duration: 3000,
                 gravity: "top",
                 position: "center",
