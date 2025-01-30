@@ -68,3 +68,10 @@ a{
     margin: 10px;
     margin-top: 10px;
 }
+h1{
+    color: aliceblue;
+    max-width: 200px;
+}
+div-right{
+    margin-top: 200px;
+}
