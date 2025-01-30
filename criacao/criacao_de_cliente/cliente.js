@@ -138,21 +138,20 @@ submit.addEventListener("click", (event)=> {
     const dadosJSON = JSON.stringify(dados)
     cadastrar(dadosJSON)
 })
-async function cadastrar(dadosJSON) {
+async function cadastrar(dados) {
     try {
         const response = await fetch(`http://localhost:3000/user/register`, {
             method: 'POST',
-            body: dadosJson,
+            body: dados,
             headers: myHeaders
         })
-        console.log(response)
         if (response.status === 200) {
             const neighborhoodsJSON = await response.json();
             selectHood.innerHTML = neighborhoodsJSON.map(hood => `<option value="${hood.id_bairro}">${hood.nome_bairro}</option>`).join('')
         }
         else {
             Toastify({
-                text: `Não há bairros cadastrados nessa cidade`,
+                text: `Não foi possível fazer o cadastro`,
                 duration: 3000,
                 gravity: "top",
                 position: "center",
@@ -161,10 +160,11 @@ async function cadastrar(dadosJSON) {
         }
     } catch (error) {
         Toastify({
-            text: `Erro ao carregar bairros)`,
+            text: `Erro ao se conectar com a api`,
             duration: 3000,
             gravity: "top",
             position: "center",
             style: { background: "red" },
         }).showToast();
+    }
 }

@@ -4,7 +4,9 @@
     flex-direction: column;
     background-color: black;
     padding-inline: 15px;
-    
+    border-radius: 50px;
+    padding: 10px;
+    padding-inline: 50px;
 }
 div{
     display: flex;
@@ -38,6 +40,7 @@ h1{
 main{
     display: flex;
     justify-content: center;
+    margin-top: 138px;
 }
 #div-half{
     display: flex;
@@ -47,4 +50,21 @@ main{
     padding: 5px;
     border-radius: 15px;
     padding-inline: 20px;
+}
+header{
+    display: flex;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    margin-top: 10px;
 }
