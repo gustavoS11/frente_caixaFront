@@ -14,9 +14,16 @@
         <a href="/menu/menu.html">Voltar</a>
     </header>
     <main>
-        <label for="btn-email">Insira o seu e-mail de login</label>
-        <input type="email" name="btn-email" id="btn-email">
-        <button type="submit">Entrar</button>
+        <label for="select-type">Cadastro de usuário</label>
+        <select name="select-type" id="select-type" aria-placeholder="Tipo de usuário">
+            <option value="1">Funcionário</option>
+            <option value="2">Gerente</option>
+        </select>
+        <label for="input-name">Insira o nome do usuário</label>
+        <input type="text" name="input-name" id="input-name">
+        <label for="input-email">Insira o email de login</label>
+        <input type="email" name="input-email" id="input-email">
+        <button type="submit" id="submit">Cadastrar</button>
     </main>
 </body>
 </html>
