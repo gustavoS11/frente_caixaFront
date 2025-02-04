@@ -4,18 +4,45 @@ const myHeaders = {
 
 const submit = document.querySelector("#submit")
 submit.addEventListener("click", function () {
-    const name = document.querySelector("#input-name").ariaValueMax
-    const value = document.querySelector("#input-value").value
     const code = document.querySelector("#input-code").value
-    const measure = document.querySelector("#input-measure").value
-    const stock = document.querySelector("#input-stock").value
-    const category = document.querySelector("#select-category").value
-    
-    const dados = {
-        name, value, code, measure, stock, category
+    const codeData = {
+        code
     }
-    createItem(dados)
+    createBarCode(codeData)
 })
+
+async function createBarCode(codeData) {
+    const dadosJson = JSON.stringify(codeData)
+    const response = await fetch(`http://localhost:3000/user/barcode`, {
+        method: 'POST',
+        body: dadosJson,
+        headers: myHeaders
+    })
+    if (response.status == 200) {
+        const barcode = await response.json()
+        const name = document.querySelector("#input-name").value
+        const value = document.querySelector("#input-value").value
+        const measure = document.querySelector("#input-measure").value
+        const stock = document.querySelector("#input-stock").value
+        const category = document.querySelector("#select-category").value
+
+        const dados = {
+        name, value, codeData, barcode, measure, stock, category
+        }
+        createItem(dados)
+    }
+    else {
+        Toastify({
+            text: `Erro ao criar o código de barras`,
+            duration: 3000,
+            gravity: "top",
+            position: "center",
+            style: {
+                background: "red",
+            }
+        }).showToast();
+    }
+}
 
 async function createItem(dados) {
     const dadosJson = JSON.stringify(dados)
@@ -25,20 +52,15 @@ async function createItem(dados) {
         headers: myHeaders
     })
     if (item.status == 200) {
-        const loginUserJson = await item.json()
-
-
-        if(loginUserJson.id_tipo_usuario == 2){
-            setTimeout(() => {
-                window.location.href = "../menu/menu.html"
-                //window.location.href = "/senha_gerente/senha.html" SERA FEITO SE SOBRAR TEMPO
-            }, 1000);
-        }
-        else{
-            setTimeout(() => {
-                window.location.href = "../menu/menu.html"
-            }, 1000)
-        }
+        Toastify({
+            text: `Cadastro do item realizado com sucesso!`,
+            duration: 3000,
+            gravity: "top",
+            position: "center",
+            style: {
+                background: "blue",
+            }
+        }).showToast();
     } else {
             Toastify({
                 text: `Erro ao fazer login (Status: ${login.status})`,
