@@ -23,31 +23,42 @@ submit.addEventListener("click", async function () {
     const quantidade = document.querySelector("#input-maxparcelas").value
     const codigo = document.querySelector("#input-code").value
 
-    const dados = {
-        tipo, nome, permite, quantidade, codigo
-    }
-    const dadosJson = JSON.stringify(dados)
-    const criarPagamento = await fetch (`http://localhost:3000/user/payment`, {
-        method: 'POST',
-        body: dadosJson,
-        headers: myHeaders
-    })
-    if (criarPagamento.status === 200) {
+    if (tipo < 1) {
         Toastify({
-            text: `Cadastro realizado`,
-            duration: 3000,
-            gravity: "top",
-            position: "center",
-            style: { background: "blue" },
-        }).showToast();
-    }
-    else {
-        Toastify({
-            text: `Não foi possível fazer o cadastro`,
+            text: `Você deve selecionar o tipo de recebimento`,
             duration: 3000,
             gravity: "top",
             position: "center",
             style: { background: "red" },
         }).showToast();
+    }
+    else {
+        const dados = {
+            tipo, nome, permite, quantidade, codigo
+        }
+        const dadosJson = JSON.stringify(dados)
+        const criarPagamento = await fetch (`http://localhost:3000/user/payment`, {
+            method: 'POST',
+            body: dadosJson,
+            headers: myHeaders
+        })
+        if (criarPagamento.status === 200) {
+            Toastify({
+                text: `Cadastro realizado`,
+                duration: 3000,
+                gravity: "top",
+                position: "center",
+                style: { background: "blue" },
+            }).showToast();
+        }
+        else {
+            Toastify({
+                text: `Não foi possível fazer o cadastro`,
+                duration: 3000,
+                gravity: "top",
+                position: "center",
+                style: { background: "red" },
+            }).showToast();
+        }
     }
 })
