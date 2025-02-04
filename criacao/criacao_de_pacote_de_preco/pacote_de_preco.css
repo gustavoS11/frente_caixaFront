@@ -15,3 +15,33 @@ a{
     margin: 10px;
     margin-top: 10px;
 }
+main{
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+#div-main{
+    background-color: black;
+    padding: 30px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    background-color: red;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    padding: 5px;
+    margin-top: 5px;
+}
+select, input{
+    padding: 5px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin-bottom: 5px;
+}
+input[type="submit"]{
+    border-radius: 16px;
+    color: aliceblue;
+    background-color: brown;
+}
