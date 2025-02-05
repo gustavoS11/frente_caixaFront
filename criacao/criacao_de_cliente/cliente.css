@@ -2,11 +2,14 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: white;
     padding-inline: 15px;
     border-radius: 50px;
     padding: 10px;
     padding-inline: 50px;
+}
+html{
+    background-color: beige;
 }
 div{
     display: flex;
@@ -22,8 +25,8 @@ input,select{
 label{
     color: wheat;
     text-align: center;
-    padding: 1px;
-    background-color: red;
+    padding: 7px;
+    background-color: #A3362F;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -53,7 +56,7 @@ main{
 }
 header{
     display: flex;
-    background-color: brown;
+    background-color: #A3362F;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,10 +65,11 @@ header{
 a{
     text-decoration: none;
     color: aliceblue;
-    background-color: black;
+    background-color: rgb(121, 3, 3);
     border-radius: 15px;
     padding: 15px;
     margin: 10px;
+    margin-left: 30px;
     margin-top: 10px;
 }
 h1{
