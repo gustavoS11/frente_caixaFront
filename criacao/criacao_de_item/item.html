@@ -8,30 +8,37 @@
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script type="module" src="item.js"></script>
     <link rel="stylesheet" href="item.css">
+    <link rel="stylesheet" href="/global.css">
 </head>
 <body>
     <header>
         <a href="/menu/menu.html">Voltar</a>
     </header>
     <main>
-        <div>
-            <label for="input-name">Insira o nome</label>
-            <input type="text" name="input-name" id="input-name">
-            <label for="input-value">Insira o valor</label>
-            <input type="number" name="input-value" id="input-value">
-            <label for="input-code">Insira o código</label>
-            <input type="text" name="input-code" id="input-code">
-            <label for="input-measure">Insira o peso do item</label>
-            <input type="text" name="input-measure" id="input-measure">
-            <label for="input-stock">Insira o estoque atual</label>
-            <input type="number" name="input-stock" id="input-stock">
-            <label for="select-category">Selecione a categoria</label>
-            <select name="select-category" id="select-category">
-                <option value="1">Legume</option>
-                <option value="2">Cereal</option>
-                <option value="3">Verdura</option>
-                <option value="4">Carboidrato</option>
-            </select>
+        <div id="div">
+            <div id="div-half">
+                <div>
+                    <label for="input-name">Insira o nome</label>
+                    <input type="text" name="input-name" id="input-name">
+                    <label for="input-value">Insira o valor</label>
+                    <input type="number" name="input-value" id="input-value">
+                    <label for="input-code">Insira o código</label>
+                    <input type="text" name="input-code" id="input-code">
+                </div>
+                <div>
+                    <label for="input-measure">Insira o peso do item</label>
+                <input type="text" name="input-measure" id="input-measure">
+                <label for="input-stock">Insira o estoque atual</label>
+                <input type="number" name="input-stock" id="input-stock">
+                <label for="select-category">Selecione a categoria</label>
+                <select name="select-category" id="select-category">
+                    <option value="1">Legume</option>
+                    <option value="2">Cereal</option>
+                    <option value="3">Verdura</option>
+                    <option value="4">Carboidrato</option>
+                </select>
+                </div>
+            </div>
             <input type="submit" value="Cadastrar" id="submit">
         </div>
     </main>

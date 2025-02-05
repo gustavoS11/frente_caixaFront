@@ -16,19 +16,27 @@ a{
     margin-top: 10px;
 }
 main{
-    margin-top: 200px;
+    margin-top: 90px;
     justify-content: center;
     display: flex;
 }
 div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
+    margin: 5px;
+}
+#div-half{
+    display: flex;
+    flex-direction: row;
+}
+#div{
+    display: flex;
+    flex-direction: column;
     padding-block: 20px;
     padding-inline: 50px;
-    background-color: black;
+    background-color: white;
     border-radius: 50px;
+    justify-content: center;
 }
 label{
     color: aliceblue;
@@ -44,9 +52,7 @@ input,select{
     margin-bottom: 10px;
 }
 #submit{
+    padding: 5px;
     border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-    background-color: brown;
-    color: aliceblue;
+    padding-inline: 20px;
 }

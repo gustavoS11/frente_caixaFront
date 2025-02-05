@@ -8,22 +8,32 @@
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script type="module" src="usuario.js"></script>
     <link rel="stylesheet" href="usuario.css">
+    <link rel="stylesheet" href="/global.css">
 </head>
 <body>
     <header>
         <a href="/menu/menu.html">Voltar</a>
     </header>
     <main>
-        <label for="select-type">Cadastro de usuário</label>
-        <select name="select-type" id="select-type" aria-placeholder="Tipo de usuário">
-            <option value="1">Funcionário</option>
-            <option value="2">Gerente</option>
-        </select>
-        <label for="input-name">Insira o nome do usuário</label>
-        <input type="text" name="input-name" id="input-name">
-        <label for="input-email">Insira o email de login</label>
-        <input type="email" name="input-email" id="input-email">
-        <button type="submit" id="submit">Cadastrar</button>
+        <div id="div">
+            <div>
+                <label for="select-type">Cadastro de usuário</label>
+                <select name="select-type" id="select-type" aria-placeholder="Tipo de usuário">
+                    <option value="1">Funcionário</option>
+                    <option value="2">Gerente</option>
+                </select>
+            </div>
+            <div>
+                <label for="input-name">Insira o nome do usuário</label>
+                <input type="text" name="input-name" id="input-name">
+            </div>
+            <div>
+                <label for="input-email">Insira o email de login</label>
+                <input type="email" name="input-email" id="input-email">
+            </div>
+            
+            <button type="submit" id="submit">Cadastrar</button>
+        </div>
     </main>
 </body>
 </html>

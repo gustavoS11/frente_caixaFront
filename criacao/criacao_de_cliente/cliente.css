@@ -22,14 +22,6 @@ input,select{
     border-bottom-left-radius: 15px;
     padding: 1px;
 }
-label{
-    color: wheat;
-    text-align: center;
-    padding: 7px;
-    background-color: #A3362F;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
 button{
     margin: 5px;
     border-radius: 15px;
@@ -61,16 +53,6 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-}
-a{
-    text-decoration: none;
-    color: aliceblue;
-    background-color: rgb(121, 3, 3);
-    border-radius: 15px;
-    padding: 15px;
-    margin: 10px;
-    margin-left: 30px;
-    margin-top: 10px;
 }
 h1{
     color: aliceblue;
