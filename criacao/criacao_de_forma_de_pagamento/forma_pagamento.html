@@ -16,20 +16,17 @@
     </header>
     <main>
         <div>
-            <div>
+            <div class="div">
                 <label for="select-typePayment">Selecione o tipo de recebimento</label>
                 <select name="select-typePayment" id="select-typePayment"></select>
                 <label for="input-name">Insira o nome</label>
                 <input type="text" name="input-name" id="input-name">
-                <label for="select-parcelamento">Selecione se permite parcelamento</label>
-                <select name="select-parcelamento" id="select-parcelamento">
-                    <option value="y">Sim</option>
-                    <option value="n">Não</option>
-                </select>
-                <label for="input-maxparcelas">Selecione quantas parcelas</label>
-                <input type="number" name="input-maxparcelas" id="input-maxparcelas">
-                <label for="input-code">Insira o codigo</label>
-                <input type="number" name="input-code" id="input-code">
+                
+                <div id="parcelas-container" style="display: none;">
+                    <label for="input-maxparcelas">Selecione o máximo de parcelas</label>
+                    <input type="number" name="input-maxparcelas" id="input-maxparcelas">
+                </div>
+
                 <input type="submit" value="Criar" id="input-submit">
             </div>
         </div>
