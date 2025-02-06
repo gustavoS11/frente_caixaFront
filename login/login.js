@@ -2,7 +2,7 @@ const myHeaders = {
     "Content-Type": "application/json"
 }
 
-const submit = document.querySelector("#btn-submit")
+const submit = document.querySelector("#submit")
 submit.addEventListener("click", (event)=>{
     event.preventDefault()
     const email = document.querySelector("#btn-email").value

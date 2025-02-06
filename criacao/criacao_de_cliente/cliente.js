@@ -19,13 +19,10 @@ submit.addEventListener("click", (event)=> {
     buscarEndereco(cep)
         .then(endereco => {
             const state = endereco.uf
-            const city = endereco.localidade
             const cityId = endereco.ibge
             const hood = endereco.bairro
             const road = endereco.logradouro
-
             const name = document.querySelector("#input-name").value
-            const code = document.querySelector("#input-code").value
             const nature = document.querySelector("#select-nature").value
             const cpfCnpj = document.querySelector("#input-cpf_cnpj").value
             const rg = document.querySelector("#input-rg").value
@@ -33,10 +30,13 @@ submit.addEventListener("click", (event)=> {
             const houseNumber = document.querySelector("#input-house").value
             const email = document.querySelector("#input-email").value
 
-            console.log(state)
-            console.log(cityId)
-            console.log(hood)
-            console.log(road)
+            const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let code = ''
+
+            for (let i = 0; i < 7; i++) {
+                const indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+                code += caracteres.charAt(indiceAleatorio);
+            }
             const dados = {
                 name, code, nature, cpfCnpj, rg, birth, state, cityId, hood, road, houseNumber, email
             }
@@ -71,7 +71,6 @@ async function cadastrar(dados) {
             }).showToast();
         }
     } catch (error) {
-        console.log(error)
         Toastify({
             text: `Erro ao se conectar com a api`,
             duration: 3000,

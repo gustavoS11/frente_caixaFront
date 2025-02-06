@@ -1,4 +1,4 @@
-#div-forms{
+#div-forms {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -8,45 +8,65 @@
     padding: 10px;
     padding-inline: 50px;
 }
-html{
+
+html {
     background-color: beige;
 }
-div{
+
+div {
     display: flex;
     flex-direction: column;
     margin: 5px;
     border-radius: 15px;
 }
-input,select{
+
+input, select {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     padding: 1px;
 }
-button{
+
+button {
     margin: 5px;
     border-radius: 15px;
     padding: 5px;
     background-color: brown;
     color: wheat;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-main{
+
+main {
     display: flex;
     justify-content: center;
     margin-top: 138px;
 }
-#div-half{
+
+#div-half {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
-#submit{
+
+#div-left, #div-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+}
+
+#submit {
     padding: 5px;
     border-radius: 15px;
     padding-inline: 20px;
+    background-color: #A3362F;
+    color: white;
 }
-header{
+
+header {
     display: flex;
     background-color: #A3362F;
     position: fixed;
@@ -54,10 +74,12 @@ header{
     left: 0;
     width: 100%;
 }
-h1{
+
+h1 {
     color: aliceblue;
     max-width: 200px;
 }
-div-right{
+
+div-right {
     margin-top: 200px;
 }

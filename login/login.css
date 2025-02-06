@@ -1,3 +1,31 @@
+#div{
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    padding-inline: 50px;
+    padding-block: 20px;
+    border-radius: 32px;
+}
 div{
-    background-color:coral;
+    display: flex;
+    flex-direction: column;
+}
+input[type="submit"]{
+    margin: 5px;
+    padding: 7px;
+    border-radius: 16px;
+}
+label{
+    margin-top: 5px;
+}
+input{
+    margin-bottom: 5px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+main{
+    display: flex;
+    justify-content: center;
 }
