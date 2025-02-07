@@ -22,16 +22,20 @@ main{
 }
 #div-main{
     background-color: white;
-    padding: 30px;
+    padding-inline: 50px;
+    padding-block: 20px;
     border-radius: 32px;
     display: flex;
     flex-direction: column;
+}
+label{
+    margin-top: 10px;
 }
 select, input{
     padding: 5px;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 input[type="submit"]{
     border-radius: 16px;

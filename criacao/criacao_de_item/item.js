@@ -4,7 +4,12 @@ const myHeaders = {
 
 const submit = document.querySelector("#submit")
 submit.addEventListener("click", function () {
-    const code = document.querySelector("#input-code").value
+    let code = ''
+
+            for (let i = 0; i < 7; i++) {
+                const indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+                code += caracteres.charAt(indiceAleatorio);
+            }
     const codeData = {
         code
     }

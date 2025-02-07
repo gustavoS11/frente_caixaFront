@@ -56,3 +56,26 @@ input,select{
     border-radius: 15px;
     padding-inline: 20px;
 }
+    #form-container {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+    .input-group {
+        display: flex;
+        flex-direction: column;
+    }
+    #submit {
+        grid-column: span 2;
+        padding: 10px;
+        cursor: pointer;
+    }
+#form-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 50px;
+    padding-block: 20px;
+    background-color: white;
+    border-radius: 32px;
+}

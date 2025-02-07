@@ -26,14 +26,6 @@ input, select {
     padding: 1px;
 }
 
-button {
-    margin: 5px;
-    border-radius: 15px;
-    padding: 5px;
-    background-color: brown;
-    color: wheat;
-}
-
 h1 {
     text-align: center;
 }
@@ -62,8 +54,6 @@ main {
     padding: 5px;
     border-radius: 15px;
     padding-inline: 20px;
-    background-color: #A3362F;
-    color: white;
 }
 
 header {

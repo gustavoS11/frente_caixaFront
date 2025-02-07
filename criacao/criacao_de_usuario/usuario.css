@@ -29,6 +29,10 @@ main{
 select,input{
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
+    margin-bottom: 10px;
+}
+label{
+    margin-top: 10px;
 }
 #submit{
     border-radius: 16px;
