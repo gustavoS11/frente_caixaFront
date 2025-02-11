@@ -45,6 +45,10 @@ async function createBarCode(codeData) {
             position: "center",
             style: {
                 background: "red",
+                borderRadius: "10px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
             }
         }).showToast();
     }
@@ -64,7 +68,12 @@ async function createItem(dados) {
             gravity: "top",
             position: "center",
             style: {
-                background: "blue",
+                background: "#790303",
+                color: "beige",
+                borderRadius: "10px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
             }
         }).showToast();
     } else {
@@ -75,6 +84,10 @@ async function createItem(dados) {
                 position: "center",
                 style: {
                     background: "red",
+                    borderRadius: "10px",
+                    padding: "10px 20px",
+                    fontWeight: "bold",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
                 }
             }).showToast();
     }

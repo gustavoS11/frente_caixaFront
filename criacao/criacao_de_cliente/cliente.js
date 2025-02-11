@@ -70,7 +70,14 @@ async function cadastrar(dados) {
                 duration: 3000,
                 gravity: "top",
                 position: "center",
-                style: { background: "blue" },
+                style: {
+                    background: "beige",
+                    color: "#790303",
+                    borderRadius: "10px",
+                    padding: "10px 20px",
+                    fontWeight: "bold",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
+                },
             }).showToast();
         }
         else {
@@ -79,7 +86,14 @@ async function cadastrar(dados) {
                 duration: 3000,
                 gravity: "top",
                 position: "center",
-                style: { background: "red" },
+                style: {
+                    background: "#790303",
+                    color: "beige",
+                    borderRadius: "10px",
+                    padding: "10px 20px",
+                    fontWeight: "bold",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
+                },
             }).showToast();
         }
     } catch (error) {
@@ -88,7 +102,14 @@ async function cadastrar(dados) {
             duration: 3000,
             gravity: "top",
             position: "center",
-            style: { background: "red" },
+            style: {
+                borderRadius: "10px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                background: "#790303",
+                color: "beige",
+            },
         }).showToast();
     }
 }

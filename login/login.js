@@ -45,6 +45,10 @@ async function loginUser(dados) {
                 position: "center",
                 style: {
                     background: "red",
+                    borderRadius: "10px",
+                    padding: "10px 20px",
+                    fontWeight: "bold",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
                 }
             }).showToast();
     }

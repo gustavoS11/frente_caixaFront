@@ -40,7 +40,13 @@ async function insertEachProduct () {
             duration: 3000,
             gravity: "top",
             position: "center",
-            style: { background: "red" },
+            style: {
+                background: "red",
+                borderRadius: "10px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
+            },
         }).showToast();
     }
 }
@@ -69,7 +75,13 @@ selectProduct.addEventListener("change", async function () {
             duration: 3000,
             gravity: "top",
             position: "center",
-            style: { background: "red" },
+            style: {
+                background: "red",
+                borderRadius: "10px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
+            },
         }).showToast();
     }
 })
@@ -96,7 +108,14 @@ async function insertPromotion () {
             duration: 3000,
             gravity: "top",
             position: "center",
-            style: { background: "blue" },
+            style: {
+                background: "#790303",
+                color: "beige",
+                borderRadius: "10px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
+            },
         }).showToast();
     }
     else {
@@ -105,7 +124,13 @@ async function insertPromotion () {
             duration: 3000,
             gravity: "top",
             position: "center",
-            style: { background: "red" },
+            style: {
+                background: "red",
+                borderRadius: "10px",
+                padding: "10px 20px",
+                fontWeight: "bold",
+                boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
+            },
         }).showToast();
     }
 }
