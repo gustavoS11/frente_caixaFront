@@ -4,6 +4,7 @@ const myHeaders = {
 
 const submit = document.querySelector("#submit")
 submit.addEventListener("click", function () {
+    const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let code = ''
 
             for (let i = 0; i < 7; i++) {
