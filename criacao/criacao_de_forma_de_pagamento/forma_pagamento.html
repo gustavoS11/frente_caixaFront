@@ -13,24 +13,29 @@
 <body>
     <header>
         <a href="/menu/menu.html">Voltar</a>
+        <h2>CADASTRO DE FORMA DE PAGAMENTO</h2>
     </header>
     <main>
-        <div>
+        <div id="div-forms">
             <div class="div">
                 <div class="secondary-div">
-                    <label for="select-typePayment">Selecione o tipo de recebimento</label>
-                    <select name="select-typePayment" id="select-typePayment"></select>
+                    <label for="select-typePayment">Escolha o tipo de recebimento</label>
+                    <select name="select-typePayment" id="select-typePayment">
+                        <option value="cartao">Cartão</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="pix">Pix</option>
+                    </select>
                 </div>
                 <div class="secondary-div">
-                    <label for="input-name">Insira o nome</label>
-                    <input type="text" name="input-name" id="input-name">
+                    <label for="input-name">Nome da forma de pagamento</label>
+                    <input type="text" name="input-name" id="input-name" placeholder="Ex: Banco do Brasil Crédito">
                 </div>
                 <div id="parcelas-container" style="display: none;" class="secondary-div">
-                    <label for="input-maxparcelas">Selecione o máximo de parcelas</label>
-                    <input type="number" name="input-maxparcelas" id="input-maxparcelas">
+                    <label for="input-maxparcelas">Número máximo de parcelas</label>
+                    <input type="number" name="input-maxparcelas" id="input-maxparcelas" placeholder="Defina o nº máximo de parcelas">
                 </div>
 
-                <input type="submit" value="Criar" id="input-submit">
+                <input type="submit" value="Criar Forma de Pagamento" id="input-submit">
             </div>
         </div>
     </main>

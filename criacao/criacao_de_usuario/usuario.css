@@ -16,7 +16,6 @@ a{
     margin-top: 10px;
 }
 main{
-    margin-top: 200px;
     display: flex;
     justify-content: center;
 }
@@ -39,7 +38,7 @@ label{
     padding: 7px;
     
 }
-div{
+#div-forms{
     justify-content: center;
     display: flex;
     flex-direction: column;

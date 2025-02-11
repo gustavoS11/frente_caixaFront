@@ -17,10 +17,9 @@ a{
 }
 main{
     display: flex;
-    margin-top: 200px;
     justify-content: center;
 }
-#div-main{
+#div-forms{
     background-color: white;
     padding-inline: 50px;
     padding-block: 20px;

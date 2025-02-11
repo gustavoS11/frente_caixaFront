@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     background-color: brown;
     position: fixed;
@@ -6,7 +6,7 @@ header{
     left: 0;
     width: 100%;
 }
-a{
+a {
     text-decoration: none;
     color: aliceblue;
     background-color: black;
@@ -15,62 +15,11 @@ a{
     margin: 10px;
     margin-top: 10px;
 }
-main{
-    margin-top: 90px;
-    justify-content: center;
+main {
     display: flex;
-}
-div{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-#div-half{
-    display: flex;
-    flex-direction: row;
-}
-#div{
-    display: flex;
-    flex-direction: column;
-    padding-block: 20px;
-    padding-inline: 50px;
-    background-color: white;
-    border-radius: 50px;
     justify-content: center;
 }
-label{
-    color: aliceblue;
-    background-color: red;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    padding: 5px;
-    font-weight: 600;
-}
-input,select{
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    margin-bottom: 10px;
-}
-#submit{
-    padding: 5px;
-    border-radius: 15px;
-    padding-inline: 20px;
-}
-    #form-container {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        margin: auto;
-    }
-    .input-group {
-        display: flex;
-        flex-direction: column;
-    }
-    #submit {
-        grid-column: span 2;
-        padding: 10px;
-        cursor: pointer;
-    }
-#form-total{
+#div-forms {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,4 +27,47 @@ input,select{
     padding-block: 20px;
     background-color: white;
     border-radius: 32px;
+    flex-direction: column;
+}
+#form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+label {
+    color: aliceblue;
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: 600;
+}
+input, select {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+#submit {
+    grid-column: span 2;
+    padding: 10px;
+    cursor: pointer;
+}
+.div-group{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+.div-group input, select{
+    border-radius: 0px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+.div-group label{
+    border-radius: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+#div-category select{
+    width: 293px;
 }

@@ -12,13 +12,24 @@ function buscarEndereco(cep) {
             return data;
         });
 }
+const nature = document.querySelector("#select-nature")
+nature.addEventListener("change", (event)=> {
+    event.preventDefault()
+    const natureValue = document.querySelector("#select-nature").value
+    const inscricaoestadualContainer = document.querySelector("#ie-container")
+    if (natureValue === "juridico") {
+        inscricaoestadualContainer.style.display = "flex";
+    } else {
+        inscricaoestadualContainer.style.display = "none";
+        document.querySelector("#input-ie").value = ""
+    }
+})
 const submit = document.querySelector("#submit")
 submit.addEventListener("click", (event)=> {
     event.preventDefault()
     const cep = document.querySelector("#input-cep").value
     buscarEndereco(cep)
         .then(endereco => {
-            const state = endereco.uf
             const cityId = endereco.ibge
             const hood = endereco.bairro
             const road = endereco.logradouro
@@ -29,6 +40,7 @@ submit.addEventListener("click", (event)=> {
             const birth = document.querySelector("#input-birth").value
             const houseNumber = document.querySelector("#input-house").value
             const email = document.querySelector("#input-email").value
+            const stateRegistration = document.querySelector("#input-ie").value
 
             const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
             let code = ''
@@ -38,7 +50,7 @@ submit.addEventListener("click", (event)=> {
                 code += caracteres.charAt(indiceAleatorio);
             }
             const dados = {
-                name, code, nature, cpfCnpj, rg, birth, state, cityId, hood, road, houseNumber, email
+                name, code, nature, cpfCnpj, rg, birth, cityId, hood, road, houseNumber, email, stateRegistration
             }
             const dadosJSON = JSON.stringify(dados)
             cadastrar(dadosJSON)

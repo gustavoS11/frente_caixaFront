@@ -48,3 +48,18 @@ a{
 html{
     background-color: beige;
 }
+main{
+    margin-top: 150px;
+}
+.img-creation{
+    width: 900px;
+    margin-inline: -300px;
+    z-index: 1;
+}
+h2{
+    flex-grow: 1;
+    position: fixed;
+    left: 15vw;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -19,3 +19,12 @@ ul{
     flex-direction: row;
     justify-content: center;
 }
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
+img{
+    width: 900px;
+    height: auto;
+}

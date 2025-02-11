@@ -13,37 +13,44 @@
 <body>
     <header>
         <a href="/menu/menu.html">Voltar</a>
+        <h2>CADASTRO DE ITEM</h2>
     </header>
     <main>
-        <div id="form-total">
+        <div id="div-forms">
             <div id="form-container">
-                <div class="input-group">
-                    <label for="input-name">Nome</label>
-                    <input type="text" id="input-name">
+                <div class="div-group">
+                    <label for="input-name">Informe o nome do item</label>
+                    <input type="text" id="input-name" placeholder="Ex: Maçã, Arroz...">
                 </div>
-                <div class="input-group">
-                    <label for="input-value">Valor</label>
-                    <input type="number" id="input-value">
+                <div class="div-group">
+                    <label for="input-value">Defina o valor do item (R$)</label>
+                    <input type="number" id="input-value" placeholder="Ex: 10, 15.50...">
                 </div>
-                <div class="input-group">
-                    <label for="input-measure">Peso</label>
-                    <input type="text" id="input-measure">
+                <div class="div-group">
+                    <label for="input-measure">Informe o peso ou medida do item</label>
+                    <input type="text" id="input-measure" placeholder="Ex: 100g, 500g, 2L...">
                 </div>
-                <div class="input-group">
-                    <label for="input-stock">Estoque</label>
-                    <input type="number" id="input-stock">
-                </div>
-                <div class="input-group">
-                    <label for="select-category">Categoria</label>
-                    <select id="select-category">
-                        <option value="1">Legume</option>
-                        <option value="2">Cereal</option>
-                        <option value="3">Verdura</option>
-                        <option value="4">Carboidrato</option>
-                    </select>
+                <div class="div-group">
+                    <label for="input-stock">Quantidade em estoque</label>
+                    <input type="number" id="input-stock" placeholder="Ex: 10, 25, 50...">
                 </div>
             </div>
-            <input type="submit" value="Cadastrar" id="submit">
+            <div class="div-group" id="div-category">
+                <label for="select-category">Selecione a categoria do item</label>
+                <select id="select-category">
+                    <option value="1">Alimentos</option>
+                    <option value="2">Higiene</option>
+                    <option value="3">Limpeza</option>
+                    <option value="4">Tecnologia</option>
+                    <option value="5">Animais</option>
+                    <option value="6">Bebês</option>
+                    <option value="7">Saúde</option>
+                    <option value="8">Tabacaria</option>
+                    <option value="9">Decoração</option>
+                    <option value="10">Outros</option>
+                </select>
+            </div>
+            <input type="submit" value="Cadastrar Item" id="submit">
         </div>
     </main>
 </body>

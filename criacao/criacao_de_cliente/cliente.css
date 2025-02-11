@@ -26,14 +26,10 @@ input, select {
     padding: 1px;
 }
 
-h1 {
-    text-align: center;
-}
 
 main {
     display: flex;
     justify-content: center;
-    margin-top: 138px;
 }
 
 #div-half {
@@ -63,13 +59,4 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-}
-
-h1 {
-    color: aliceblue;
-    max-width: 200px;
-}
-
-div-right {
-    margin-top: 200px;
 }

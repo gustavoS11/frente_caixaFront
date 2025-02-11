@@ -13,26 +13,27 @@
 <body>
     <header>
         <a href="/menu/menu.html">Voltar</a>
+        <h2>CADASTRO DE USUÁRIO</h2>
     </header>
     <main>
-        <div id="div">
+        <div id="div-forms">
             <div>
-                <label for="select-type">Cadastro de usuário</label>
+                <label for="select-type">Selecione o tipo de usuário</label>
                 <select name="select-type" id="select-type" aria-placeholder="Tipo de usuário">
                     <option value="1">Funcionário</option>
                     <option value="2">Gerente</option>
                 </select>
             </div>
             <div>
-                <label for="input-name">Insira o nome do usuário</label>
-                <input type="text" name="input-name" id="input-name">
+                <label for="input-name">Informe o nome completo do usuário</label>
+                <input type="text" name="input-name" id="input-name" placeholder="Ex: João Silva">
             </div>
             <div>
-                <label for="input-email">Insira o email de login</label>
-                <input type="email" name="input-email" id="input-email">
+                <label for="input-email">Informe o email de login</label>
+                <input type="email" name="input-email" id="input-email" placeholder="Ex: joao.silva@gmail.com">
             </div>
             
-            <button type="submit" id="submit">Cadastrar</button>
+            <button type="submit" id="submit">Cadastrar Usuário</button>
         </div>
     </main>
 </body>

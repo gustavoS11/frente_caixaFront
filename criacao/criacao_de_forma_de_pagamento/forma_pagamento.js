@@ -21,11 +21,10 @@ insertTypePayment();
 selectPayment.addEventListener("change", function () {
     const tipoPagamento = selectPayment.value;
     
-    // Se o tipo de pagamento for "Crédito" (id = 4), mostrar o campo de parcelas
     if (tipoPagamento === "4") {
         parcelasContainer.style.display = "flex";
     } else {
-        parcelasContainer.style.display = "none"; // Oculta o campo de parcelas
+        parcelasContainer.style.display = "none";
     }
 });
 
